@@ -1,0 +1,56 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Coordinadora dev",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_development.dart",
+            "args": [
+                "--flavor",
+                "development",
+                "--dart-define",
+                "--dart-define",
+            ]
+        },
+        {
+            "name": "Coordinadora prod",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_production.dart",
+            "args": [
+                "--flavor",
+                "production",
+                "--dart-define",
+                "--dart-define",
+            ]
+        },
+        {
+            "name": "Coordinadora prod profile",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_production.dart",
+            "args": [
+                "--profile",
+                "--flavor",
+                "production",
+                "--dart-define",
+                "--dart-define",
+            ]
+        },
+        {
+            "name": "Coordinadora dev profile",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_development.dart",
+            "args": [
+                "--profile",
+                "--flavor",
+                "development",
+                "--dart-define",
+                "--dart-define",
+            ]
+        }
+
+    ]
+}
